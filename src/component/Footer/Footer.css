@@ -1,0 +1,78 @@
+
+.footer-fixed,
+.footer {
+  z-index: 5;
+  height: 100vh;
+  width: 100vw;
+  background: url('../img/radio-logo.png');
+  background-size: 100vw 100vh;
+  position: absolute;
+  padding: calc((100vh) / 2) calc((100vw) / 2);
+  bottom: 0;
+  animation: mymove 5s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    background: url("../img/radio-logo-mobil.png");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    padding: calc((100vh) / 2) calc((70vw) / 2);
+  }
+}
+
+.animation-show{
+  position: absolute;
+  animation: mymove 3s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+}
+
+/* @keyframes mymove {
+  from {
+    height: 100vh;
+    width: 100vw;
+    padding: calc((100vh - 235px) / 2)  calc((88vw) / 2);
+  }
+  20%{
+    border-radius: 0 50% 0 0;
+  }
+  80%{
+    border-radius: 0 80% 0 0;
+  }
+  98%{
+    border-radius: 0 100% 0 0;
+  }
+  to {
+    bottom: 0px;
+    height: 50px;
+    position: fixed;
+    padding: 0;
+    border-radius: 0 0 0 0;
+    background: #0000003a;
+  }
+} */
+
+.btn{
+  height: 100px;
+  width: 100px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  line-height: 0;
+  border-radius: 5rem;
+  background: rgba(31, 25, 25, 0.651);
+}
+
+.btn-fixed{
+  background: red;
+  width: 50px;
+  height: 50px;
+}
+
+.play{
+  font-size: 5rem;
+  color: #d9d9d9ad;
+}
